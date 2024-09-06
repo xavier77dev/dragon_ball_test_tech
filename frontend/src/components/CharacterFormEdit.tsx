@@ -72,7 +72,7 @@ const CharacterFormEdit = () => {
 
   const onSubmit: SubmitHandler<CharacterFormEditInputs> = async (data) => {
     try {
-      const response = await api.put(`/characters/${id}`, {
+      await api.put(`/characters/${id}`, {
         name: data.name.trim(),
         affiliation: data.affiliation.trim(),
         race: data.race.trim(),

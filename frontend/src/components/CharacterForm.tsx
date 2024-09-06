@@ -40,7 +40,7 @@ const CharacterForm = () => {
   const onSubmit: SubmitHandler<CharacterFormInputs> = async (data) => {
 
     try {
-      const response = await api.post('/characters', {
+      await api.post('/characters', {
         name: data.name.trim(),
         affiliation: data.affiliation.trim(),
         race: data.race.trim(),
