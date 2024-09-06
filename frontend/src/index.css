@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.kamehouse_img {
+  background-image: url("./assets/kamehouse.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 458px) {
+  .kamehouse_img {
+    min-height: 100vh;
+    padding: 10% 0;
+  }
+}
+
+
+.animated-nube-voladora {
+  position: relative;
+  animation: moveRightToLeft 1s linear infinite;
+  width: 300px;
+
+}
+
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100%); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
