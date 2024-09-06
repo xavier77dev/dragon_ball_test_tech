@@ -1,15 +1,27 @@
 {
-  "version": 2,
-  "builds": [
+  "headers": [
     {
-      "src": "src/app.ts",
-      "use": "@vercel/node"
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://dragon-ball-test-tech-frontend.vercel.app"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"
+        }
+      ]
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "src/app.ts"
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
     }
   ]
 }
