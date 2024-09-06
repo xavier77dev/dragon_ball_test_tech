@@ -47,7 +47,7 @@ npm install
 npm run dev
 ```
 ## variables de entorno
-´´´bash
+```bash
 MONGO_URI="tu_cadena_de_conexion_a_mongodb"
 SECRET_KEY='tu_secreto_jwt'
 PASSWORD_SECRET='tu_password_secret'
