@@ -11,7 +11,7 @@ const app: Application = express();
 app.use(express.json());
 
 app.use(cors({
-  origin: ['https://dragon-ball-test-tech-frontend.vercel.app'],
+  origin: "*",
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization']
