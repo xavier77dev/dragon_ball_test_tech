@@ -47,12 +47,13 @@ npm install
 npm run dev
 ```
 ## variables de entorno
+´´´bash
 MONGO_URI="tu_cadena_de_conexion_a_mongodb"
 SECRET_KEY='tu_secreto_jwt'
 PASSWORD_SECRET='tu_password_secret'
 PORT=3000
 API_DRAGONBALL='https://dragonball-api.com/api/characters'
-
+```
 
 ### Frontend
 ```bash
@@ -63,6 +64,7 @@ npm install
 npm run dev
 ```
 ## variables de entorno
+```bash
 VITE_API_URL=http://localhost:3000
-
+```
 
